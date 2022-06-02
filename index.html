@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="java/menu.js"></script>
+</head>
+<body>
+    <header id="encabezado">
+      <nav class="navbar">
+        <div class="mx-5">
+            <a>Conf Bs As</a>
+        </div>
+
+        <ul class="nav ">
+          <li class="nav-item">
+            <a class="nav-link text-light fs-6" href="#">La conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary fs-6" href="#">Los oradores</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-secondary fs-6" href="#">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary fs-6" href="#">Conviértete en orador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success fs-6" href="#">Comprar tickets</a>
+          </li>
+        </ul>
+
+      </nav>  
+    </header>
+
+    <main>
+        <section class="price container">
+
+            <div class="price__table">
+                <div class="price__element ">
+                    <h3 class="p-2">Estudiante</h3>
+                    <p class="price__name">Tienen un descuento</p>
+                    <h4 class="p-2">80%</h4>
+                    <p class="sub">*Presentar documentacion</p>
+                </div>
+
+
+            
+                <div class="price__element best">
+                    <h3 class="p-2">Trainee</h3>
+                    <p class="price__name">Tienen un descuento</p>
+                    <h4 class="p-2">50%</h4>
+                    <p class="sub">*Presentar documentacion</p>
+                </div>
+           
+
+           
+                <div class="price__element bestt">
+                    <h3 class="p-2">Junior</h3>
+                    <p class="price__name">Tienen un descuento</p>
+                    <h4 class="p-2">15%</h4>
+                    <p class="sub">*Presentar documentacion</p>
+                </div>
+            </div>
+
+        </section>
+        
+
+        
+        <section class="question_container container">
+            <p>VENTA</p>
+            <h1>VALOR DE TICKET $200</h1>
+            <form class="questions__form" action="#">
+                <div class="questions__inputs">
+                    <input type="text" placeholder="Nombre: " class="question__input" >
+                    <input type="text" placeholder="Apellido: " class="question__input">
+                </div>
+                <div class="questions__inputs">
+                    <input type="email"placeholder="Correo" class="question__input">
+                </div>
+                <div class="question_cant">
+                  <div class="cantidad">
+                    <label for="" class="px-2 py-2">Cantidad</label>
+                    <input type="text" id="cantidad" placeholder="Cantidad: " class="question__input" >
+                  </div>
+                  <div class="categoria">
+                    <label for="" class="py-2 px-2">Categoria</label>
+                    <br>
+                    <select name="cat" class="categ question__input"">
+                      <option class="categoria" id="categoriavalor" value="estudiante">estudiante</option>
+                      <option class="categoria" id="categoriavalor" value="trainee">trainee</option>
+                      <option class="categoria" id="categoriavalor" value="junior">junior</option>
+                    </select>
+                  </div>
+
+                  <div class="precio">
+                    <input type="text" id="result" readonly="true" placeholder="Total a Pagar: $" class="preci"> 
+                  </div>
+
+                  <div class="botones">
+                    <button onclick="calcular('borrar');" class="bot">Borrar</button>
+                    <button onclick="calcular('resumen');"class="bot">Resumen</button>
+                  </div>
+            </form>
+
+        </section>
+
+        <footer class="d-flex align-items justify-content-center">
+          <div><p class="fs-5 px-5 pt-3 ">Preguntas <br> frecuentes</p></div>
+          <p class="fs-5 px-5 pt-3">Contáctenos</p>
+          <p class="fs-5 px-5 pt-3">Prensa</p>
+          <p class="fs-5 px-5 pt-3">Conferencia</p>
+          <p class="fs-5 px-5 pt-3">Términos y <br> condiciones</p>
+          <p class="fs-5 px-5 pt-3">Privacidad</p>
+          <p class="fs-5 px-5 pt-3">estudiantes</p>
+      
+        </footer>
+      
+
+
+
+
+
+
+
+        
+    </main>
+
+
+
+</body>
+</html>
