@@ -9,7 +9,7 @@ function calcular(operacion)
     {
         case 'resumen':
             if(categoriavalor == "estudiante"){
-                document.getElementById('result').value="Total a pagar: $" + ((200*0,80)*cantidad);
+                document.getElementById('result').value="Total a pagar: $" + ((200*0,20)*cantidad);
                 break;
             }
             if(categoriavalor == "trainee"){
@@ -17,7 +17,7 @@ function calcular(operacion)
                 break;
             }
            if(categoriavalor == "junior"){
-                document.getElementById('result').value="Total a pagar: $" + ((200*0,15)*cantidad);
+                document.getElementById('result').value="Total a pagar: $" + ((200*0,85)*cantidad);
                 break;
             }
         case 'borrar':
